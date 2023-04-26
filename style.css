@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    overflow-y: auto;
+    background: #07070746;
+}
+
+.header {
+    padding: 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.header .menu {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header li {
+    display: inline-block;
+    padding: 14px;
+    margin-left: 10px;
+    background-color: rgba(53, 49, 49, 0.605);
+    color: white;
+    border-radius: 10px;
+}
+
+.header li:hover {
+    background-color: green;
+}
+
+.headbox button {
+    padding: 15px;
+    background: rgba(0, 128, 0, 0.571);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    padding: 0 30px;
+}
+
+.content .headbox {
+    float: left;
+    padding: 10% 0;
+}
+
+.content .headbox h2,
+p {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.heroimage {
+    float: right;
+    padding: 6% 0;
+}
+
+.footer .textbox h2,
+.footer .textbox p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.image1 {
+    width: calc(25% - 30px);
+    margin: 10px 15px;
+    float: left;
+}
+
+.image1 img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer .image1 p {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.footer .image1 button {
+    padding: 15px;
+    background-color: rgba(25, 137, 189, 0.568);
+    color: white;
+    border-radius: 23px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and ( max-width :1170px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and ( max-width :500px) {
+    container {
+        width: auto;
+    }
+    .menu ul,
+    .logo,
+    .content .headbox,
+    .heroimage {
+        float: none;
+        width: 50%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .textbox p,
+    h2 {
+        width: 50%;
+        text-align: left;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .image1 {
+        width: 50%;
+        float: none;
+        padding: 10px 25px;
+        box-sizing: border-box;
+    }
+    .menu ul li {
+        width: 100%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
